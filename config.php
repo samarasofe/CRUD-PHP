@@ -1,4 +1,8 @@
 <?php
+ini_set('display_errors', '1');
+ini_set('display_startup_errors', '1');
+error_reporting(E_ALL);
+
 $servername = "localhost";
 $username = "root";
 $password = "";
@@ -10,5 +14,5 @@ $conection = new mysqli($servername, $username, $password, $database);
 if ($conection->connect_error) {
 ("Failed: " . $conection->connect_error);
 }
-echo "Connected successfully";
+
 ?>
