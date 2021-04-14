@@ -18,7 +18,7 @@
 <div class="container register">
     <div class="row">
         <div class="col-md-3 register-left">
-            <img src="image/img4.png" alt="" />
+        <img src="image/img5.png" alt="" />
             <h3>Hello There</h3>
             <p>Create the best product to you!</p>
         </div>

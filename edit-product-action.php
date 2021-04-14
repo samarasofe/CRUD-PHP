@@ -34,7 +34,7 @@ $target_file = $target_dir . basename($image["name"]);
 //var_dump($target_file);
 //die();
 
-if($target_file != $imageCurrentName && $target_file != '' ){
+if($target_file != $imageCurrentName && $target_file != '' && $image != null){
     $imageNameToSave = uploadImage($image);
     var_dump($imageNameToSave);
     die();
@@ -56,11 +56,12 @@ if ($conection->query($sql) === TRUE){
 
 
     function uploadImage($image) {
-        $imageWasSaved = null;
+        
 
         if(!$image || $image['name'] == ''){
+            var_dump($image);
+            die();
             return null;
-
         }
     
         $target_dir = "uploads/";
