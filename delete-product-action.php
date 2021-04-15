@@ -7,7 +7,7 @@ include('./config.php');
 
 $id = $_GET['id'];
 
-$newURL = "http://localhost/test_flexy/index-view.php";
+$newURL = "http://localhost/test_flexy/index.php";
 
 $sql = "DELETE FROM product WHERE id=".$id; 
 

@@ -5,7 +5,7 @@ $description = $_POST['description'];
 $stock = $_POST['stock'];
 
 
-$newURL = 'http://localhost/test_flexy/index-view.php';
+$newURL = 'http://localhost/test_flexy/index.php';
 
 $image = $_FILES["image"];
 

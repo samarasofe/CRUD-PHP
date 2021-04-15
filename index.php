@@ -16,6 +16,9 @@
 
     <link rel="stylesheet" href="style.css">
 
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+
     <script src="https://cdn.usebootstrap.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/ebfbca700c.js" crossorigin="anonymous"></script>
@@ -61,22 +64,26 @@ if ($result) {
                                         <thead>
                                             <tr>
                                                 <th>title</th>
-                                                
+
                                                 <th>stock</th>
                                                 <th>image</th>
                                                 <th>action</th>
                                             </tr>
 
                                         </thead>
+                                        <a href="http://localhost/test_flexy/new-product-view.php"
+                                            class="btn btn-primary">Add new product</a>
+
                                         <tbody>
 
                                             <?php foreach($list as $product) { ?>
 
                                             <tr>
                                                 <td><?= $product['title']; ?></td>
-                                                
+
                                                 <td><?= $product['stock']; ?></td>
-                                                <td><img src="<?= $product['image']; ?>" alt="" width="70" height="100"></td>
+                                                <td><img src="<?= $product['image']; ?>" alt="" width="70" height="100">
+                                                </td>
                                                 <td>
                                                     <a href="http://localhost/test_flexy/edit-product-view.php?id=<?= $product
                                                     ['id']; ?>
@@ -87,7 +94,9 @@ if ($result) {
                                                         data-toggle="modal" data-target="#exampleModal"><i
                                                             class="fas fa-trash-alt icons"></i></a>
 
-                                                    <a href=""><i class="fas fa-eye"></i></a>
+                                                    <a
+                                                        href="http://localhost/test_flexy/view-product.php?id=<?= $product['id']; ?>"><i
+                                                            class="fas fa-eye"></i></a>
 
                                                 </td>
                                             </tr>

@@ -6,6 +6,8 @@
 
 <link rel="stylesheet" href="style.css">
 
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
 
 <script src="https://cdn.usebootstrap.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -20,7 +22,7 @@
         <div class="col-md-3 register-left">
         <img src="image/img5.png" alt="" />
             <h3>Hello There</h3>
-            <p>Create the best product to you!</p>
+            <p>Create your product!</p>
         </div>
         <div class="col-md-9 register-right">
             <div class="tab-content" id="myTabContent">
