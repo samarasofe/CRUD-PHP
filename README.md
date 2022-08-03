@@ -1,4 +1,5 @@
-# Flexy
+# crud - PHP
+
 ## Instruções
 
 Baixar ou clonar o projeto do GitHub em sua máquina.
